@@ -1,0 +1,126 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    min-height: 100vh;
+    background-color: hsl(30, 38%, 92%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card {
+    display: flex;
+    max-width: 600px;
+    border-radius: 2%;
+    overflow: hidden;
+    background-color: white;
+}
+
+.imagem {
+    flex: 1;
+    
+}
+
+.imagem > img {
+   width: 100%;  
+   height: 100%;
+   display: block;
+   object-fit: cover;
+}
+
+.text {
+    flex: 1;
+    padding:30px;
+}
+
+.text > h2 {
+    color: #747683;
+    font-size: 12px;
+    /* border: solid 1px red; */
+    margin-bottom: 15px;
+    font-family: "Montserrat";
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+
+.text > h1 {
+    padding-right: 60px;
+    font-family: "Fraunces";
+    line-height: 30px;
+    font-weight: 500;
+    font-size: 30px;
+}
+
+.text > p {
+    line-height: 25px;
+    padding-right: 15px;
+    font-family: "Montserrat";
+    color: #8c8d95;
+    margin-top: 18px;
+    font-size: 15px;
+}
+
+.market {
+    display: flex;
+    flex-direction: column;
+    border: solid 1px red;
+}
+
+.price {
+    display: flex;
+    margin-top: 25px;
+    align-items: center;
+    gap: 15px;
+    /* border: solid 1px red; */
+}
+
+.without-discount {
+
+    font-family: "Fraunces";
+    color: #3d8068;
+}
+
+.discounted {
+    font-family: Montserrat;
+    color: #72757d;
+    text-decoration: line-through;
+    font-size: 12px;
+}
+
+.button {
+    background-color: #3d8168;
+    color: white;
+    font-family: "Montserrat";
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    width: 100%;
+    height: 45px;
+    border-radius: 8px;
+    border: none;
+    margin-top: 25px;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: #1a4031;
+}
+
+@media (max-width: 550px) {
+    .card {
+        flex-direction: column;
+        height: 100vh;
+        border-radius: 0;
+    }
+
+    .imagem > img {
+        height: 450px;
+        background-image: url('images/image-product-mobile.jpg');
+    }
+
+}
