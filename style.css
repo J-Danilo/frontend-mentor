@@ -24,11 +24,22 @@ body{
     
 }
 
-.imagem > img {
+/* .imagem > img {
    width: 100%;  
    height: 100%;
    display: block;
    object-fit: cover;
+} */
+
+.img-pc {
+    width: 100%;  
+    height: 100%;
+    display: block;
+    object-fit: cover;
+}
+
+.img-mb {
+    display: none;
 }
 
 .text {
@@ -118,9 +129,16 @@ body{
         border-radius: 0;
     }
 
-    .imagem > img {
-        height: 450px;
-        background-image: url('images/image-product-mobile.jpg');
+    .img-pc{
+        display: none;
+    }
+
+    .img-mb {
+        display: block;
+        width: 100%;  
+        height: 100%;
+        display: block;
+        object-fit: cover;
     }
 
 }
