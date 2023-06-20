@@ -15,7 +15,7 @@ body{
     display: flex;
     max-width: 600px;
     border-radius: 2%;
-    overflow: hidden;
+    /* overflow: hidden; */
     background-color: white;
 }
 
@@ -29,6 +29,8 @@ body{
    height: 100%;
    display: block;
    object-fit: cover;
+   border-top-left-radius: 2%;
+   border-bottom-left-radius: 2%;
 }
 
 .text {
@@ -114,13 +116,15 @@ body{
 @media (max-width: 550px) {
     .card {
         flex-direction: column;
-        height: 100vh;
+        height: 100%;
         border-radius: 0;
     }
 
     .imagem > img {
         height: 450px;
         background-image: url('images/image-product-mobile.jpg');
+        border-bottom-left-radius: 0;
+        border-top-left-radius: 0;
     }
 
 }
