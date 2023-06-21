@@ -21,6 +21,7 @@ body {
     max-width: 320px;
     overflow: hidden;
     padding: 16px;
+    box-shadow: 0px 10px 10px rgba(80, 76, 76, 0.1);
 
 }
 
