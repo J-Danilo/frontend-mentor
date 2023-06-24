@@ -231,4 +231,17 @@ body {
     border: 0;
 }
 
-/* fix */
+@media (max-width: 550px) {
+    .card {
+        flex-direction: column;
+        height: 100vh;
+        justify-content: center;
+        overflow: unset;
+        border-bottom-right-radius: 0;
+        }
+
+    .white-div {
+        width: 100%;
+    }
+
+}
