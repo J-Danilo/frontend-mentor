@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Password Generator</title>
+    <link
+      rel="shortcut icon"
+      href="images/favicon-32x32.png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1 class="title">Password Generator</h1>
+    <div class="password">
+      <span>PTx1f5DaFX</span>
+      <img src="images/icon-copy.svg" alt="copy" />
+    </div>
+    <div class="card">
+      <div class="range">
+        <span>Character Length</span>
+        <span class="ten">10</span>
+      </div>
+      <div class="bar">
+        <input type="range" min="0" max="100" id="slider" />
+      </div>
+      <div class="list-container">
+        <ul>
+          <li>
+            <input type="checkbox" id="checkbox1" /><label for="checkbox1"
+              >Include Uppercase Letters</label
+            >
+          </li>
+          <li>
+            <input type="checkbox" id="checkbox2" /><label for="checkbox2"
+              >Include Lowercase Letters</label
+            >
+          </li>
+          <li>
+            <input type="checkbox" id="checkbox3" /><label for="checkbox3"
+              >Include Numbers</label
+            >
+          </li>
+          <li>
+            <input type="checkbox" id="checkbox4" /><label for="checkbox4"
+              >Include Symbols</label
+            >
+          </li>
+        </ul>
+      </div>
+      <div class="strength">
+        <h2>STRENGTH</h2>
+        <div class="indicator">
+          <div class="bars">
+            <h1>MEDIUM</h1>
+            <div class="yellow"></div>
+            <div class="yellow"></div>
+            <div class="yellow"></div>
+            <div class="empty"></div>
+          </div>
+        </div>
+      </div>
+      <div class="generate">
+        <span>GENERATE</span>
+        <img src="images/icon-arrow-right.svg" alt="icon-arrow-right" />
+      </div>
+    </div>
+  </body>
+</html>
